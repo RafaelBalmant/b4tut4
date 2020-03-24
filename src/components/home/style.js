@@ -37,7 +37,7 @@ export const BodyForm = styled.div`
       transform: translateX(0px);
     }
     100%{
-      transform: translateX(-1200px);
+      transform: translateX(-3000px);
   
     }
   }
