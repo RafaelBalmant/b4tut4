@@ -44,7 +44,7 @@ function Home({}) {
     await getCep(String(cep)).then( (response) => {
       if(!response.data.error){
         const { cidade, uf } = response.data;
-        setAddress({
+        return setAddress({
           address,
           city: cidade,
           state: uf
