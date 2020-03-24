@@ -66,7 +66,7 @@ function Home({}) {
 
   return (
     <DivHome>
-      <div className="row flex-column align-items-center">
+      <div className="d-flex flex-column align-items-center">
         <ToastsContainer store={ToastsStore}/>
         <div className="flex-column d-flex col-10 card mt-2">
           <h4 className="mb-0">Pesquisar Cidade</h4>
