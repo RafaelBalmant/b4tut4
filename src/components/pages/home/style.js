@@ -29,16 +29,19 @@ export const DivHome = styled.div`
 
 
 export const BodyForm = styled.div`
-
-   animation: ${props => props.typeForm === "select" ? "slide-left 2s ease Forwards" : ""} ;
+   animation: ${props => props.animation ? "slide-left 0.6s alternate" : ""} ;
+   animation-iteration-count: 2;
 
   @keyframes slide-left {
     0%{
-      transform: translateX(0px);
+      transform: translateY(0px);
+    }
+    50%{
+      transform: translateY(-150px);
     }
     100%{
-      transform: translateX(-3000px);
-  
+      transform: translateY(-200px);
     }
   }
 `;
+
